@@ -1,0 +1,14 @@
+div {
+    background-color: tan;
+    padding: 3%;
+    margin: 2%;
+    width: 40%;
+}
+
+.soyIzquierda {
+    float: left;
+}
+
+.soyDerecha {
+    float: right;
+}

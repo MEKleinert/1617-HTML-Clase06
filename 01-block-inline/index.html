@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>block e inline</title>
+</head>
+
+<body>
+    <h1>Aprendiendo display!</h1>
+
+    <!-- .soyNormal + tab crearia un div con class="soyNormal". Se puede poner el nombre de cualquier etiqueta al ppio, y con *3 seria esa etiqueta mas las class que pongamos -->
+    
+    <!-- Los dos son display:block -->
+    <div class="soyBlock">
+        <p class="soyBlock">Lorem ipsum dolor <span>sit amet consectetur, adipisicing elit.</span> Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Quo asperiores error laborum harum, quis dolore quasi sunt eum, voluptate
+            odio exercitationem. Cupiditate quae possimus deleniti doloribus reprehenderit sapiente sequi qui?</p>
+    </div>
+
+    <!-- inline -->
+    <div class="soyInline">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil voluptas alias asperiores voluptatibus ab
+            eius animi praesentium veniam in laboriosam! Ipsa, nemo tempora qui molestiae sequi dolores esse dolore
+            natus neque eveniet ipsam maiores reprehenderit saepe in eaque quam. Nam maiores consectetur aut deleniti?
+            Voluptates natus laborum fuga quia voluptate.</p>
+    </div>
+
+    <!-- padre block hijos uno de cada uno -->
+    <div class="soyInline">
+        <p class="soyBlock">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil voluptas alias asperiores voluptatibus ab
+            eius animi praesentium veniam in laboriosam! Ipsa, nemo tempora qui molestiae sequi dolores esse dolore
+            natus neque eveniet ipsam maiores reprehenderit saepe in eaque quam. Nam maiores consectetur aut deleniti?
+            Voluptates natus laborum fuga quia voluptate.</p>
+            <p class="soyInlineBlock">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, aperiam. Veniam placeat ducimus consequuntur iste recusandae velit minus odio sapiente magni eaque. Excepturi facilis veritatis iste repellendus doloremque odit labore, quia, cupiditate rerum fuga illo eveniet soluta exercitationem ad blanditiis hic non autem eligendi placeat saepe enim. Eos, quis temporibus.</p>
+    </div>
+
+    <h2>resumiento: </h2>
+    <ul>
+        <li>padre block, hijo block o inline: se ve bien</li>
+        <li>padre inline, hijo block o inline: se ve raro</li>
+        <li>inline block es un intermedio entre ambos, porque permite usar el ancho anque se comporte como en línea</li>
+    </ul>
+</body>
+
+</html>

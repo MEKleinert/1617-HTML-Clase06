@@ -1,0 +1,64 @@
+div {
+    padding: 2%;
+    margin: 1%;
+}
+
+p {
+    background-color: violet;
+    padding: 1%;
+    margin: 1%;
+}
+
+.flex1 {
+    background-color: wheat;
+    display: flex;
+}
+
+/* cambiando el orden de los hijos: */
+.flex1 .miniFlex:first-of-type {
+    order: 1;
+    background-color: slateblue;
+}
+
+/* consejo personal: no usar order */
+.flex1 .miniFlex:last-of-type {
+    order: 0;
+    background-color: green;
+}
+
+
+/* flex direction es el eje principal. Con column, va a alinear en un eje vertical */
+.flex2 {
+    background-color: rgb(255, 201, 101);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* justify-content es como alinea respecto del eje principal */
+
+p.miniFlex1 {
+    width: 10%;
+}
+
+.flex2 {
+    background-color: rgb(233, 167, 44);
+    display: flex;
+    justify-content:left ;
+    flex-wrap: wrap;
+}
+
+.flex3 {
+    background-color: rgb(233, 167, 44);
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+}
+
+.flex4 {
+    background-color:rgb(171, 221, 171);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
